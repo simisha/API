@@ -23,7 +23,7 @@ con.connect((err)=>{
     if(err) throw err
     console.log("connected to database")
 })
-//get products
+//get products/
 app.get("/products",function(req,res){
     let sql = "SELECT * FROM products"
     let query = conn.query(sql, (err, results)=>{
